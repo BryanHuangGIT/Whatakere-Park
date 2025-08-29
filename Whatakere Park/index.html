@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Whatakere Park - The Best Place to Heal</title>
+
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+    <a href="https://jschollitt.github.io/TeWaioTane/index.html" target="_blank">
+    <div class="banner">
+        <div class="slides">
+            <div class="scene1">
+                <h1>Paddle a traditional waka on the river with expert guides.</h1>
+                <img src="images/Waka Paddling.jpg" id="img1" alt="image of waka paddling">
+            </div>
+            <div class = "scene2">
+                <h1>Enjoy a delicious hāngi feast cooked in the earth.</h1>
+                <img src="images/Hangi feast.jpg"  id="img2" alt="image of hangi feast">
+            </div>
+            <div class = "scene3">
+                <h1>Experience a stunning Māori cultural performance.</h1>
+                <h2 id="myName">Made by Bryan Alexander Huang</h2>
+                <h3 id="myStudentID">1590834</h3>
+                <img src="images/Puanga-Festival.jpg" id="img3" alt="image of Maori festival">
+            </div>
+        </div>
+    </div>
+    </a>
+    
+    <div class = "mainContent">
+        <div class = "bookingSystem">
+            <button id="home">Home</button>
+            <h1>Whatakere Pass Booking</h1>
+            <h2>Your progress bar</h2>
+            <div class = "progressBar">
+                <div id="stepNumberContainer1">
+                    <div id="stepNumber">1</div>
+                </div>
+                <div id = "stepNumberContainer2">
+                    <div id="stepNumber">2</div>
+                </div>
+                <div id = "stepNumberContainer3">
+                    <div id="stepNumber">3</div>
+                </div>
+                <div id = "stepNumberContainer4">
+                    <div id="stepNumber">4</div>
+                </div>
+            </div>
+
+            <div class = form>
+                <div id = "form1">
+                    <p id = "title">Select Date and Number of Guests</p>
+                    <p id = "inputText" >Booking date</p>
+                    <div id = inputContainer><input id="date" type="date"></div>
+                    <p id = "inputText" >Adults</p>
+                    <div id = inputContainer><input id="adult" value = "1" min="1" type="number"></div>
+                    <p id = "inputText" >Children</p>
+                    <div id = inputContainer><input id="children" value = "0" min="0" type="number"></div>
+                    <button id="btnNext1">Next</button>
+                </div>
+                <div id = "form2">
+                    <p id = "title">Contact Details</p>
+                    <p id = "inputText" >Contact Name</p>
+                    <div id = inputContainer><input id="name" type="text"></div>
+                    <p id = "inputText" >E-mail Address</p>
+                    <div id = inputContainer><input id="email" type="email"></div>
+                    <button id="btnNext2">Next</button>
+                    <button id="btnPrevious1">Previous</button>
+                </div>
+                <div id = "form3">
+                    <p id = "title">Type Of Ticket</p>
+                    <p id = "inputText" >Ticket type</p>
+                    <div id = inputContainer>
+                        <select id="ticketType">
+                            <option value = "">Select ticket type</option>
+                            <option value = "standard">Standard ticket - $25</option>
+                            <option value = "premium">Premium ticket - $45</option>
+                        </select>
+                    </div>
+                    <p id = "inputText" >(Optional) Storage locker (+5$)</p>
+                    <div id = inputContainer2>
+                        <input type="radio" id="option1" name="choice" value="storage">
+                        <label for="option1">Yes, add storage locker</label>
+                    </div>
+                    <div id = inputContainer2>
+                        <input type="radio" id="option2" name="choice" value="withoutStorage">
+                        <label for="option2">No storage locker needed</label>
+                    </div>
+                    
+                    <button id="btnNext3">Next</button>
+                    <button id="btnPrevious2">Previous</button>
+                </div>
+                <div id = "form4">
+                    <!-- This will be filled by javascript -->
+                </div>
+                <div id = "form5">
+                    <h1>Booking Made!</h1>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class= "sidebar">
+            <a href="https://www.ea.govt.nz/" target="_blank">
+            <div id="sidebar-scene1">
+                <img src="images/ashkan-forouzani-_a4oy_itJW8-unsplash.jpg" alt="" id="sidebarImg1">
+                <div><p id="text1">Enlist your off-peak power army <strong id="strong1">and save!!</strong></p></div>
+                <div id="divcharacter1"><img src="images/siderbar-char.png" alt=""id = "character1"></div>
+            </div>
+            </a>
+            <a href="https://www.ea.govt.nz/" target="_blank">
+            <div id = "sidebar-scene2">
+                <img src="images/ashkan-forouzani-_a4oy_itJW8-unsplash.jpg" alt="" id="sidebarImg2">
+                <div><p id = "text2">Same <strong id="strong2">power</strong>, smarter <strong id="strong3">time</strong></p></div>
+                <div id = "divcharacter1"><img src="images/siderbar-char.png" id = "character1" alt=""></div>
+            </div>
+            </a>
+            <a href="https://www.ea.govt.nz/" target="_blank">
+            <div id = "sidebar-scene3">
+                <div><p id="text3">Enlist smart switches and...</p></div>
+                <img src="images/sidebar char 2.png" id = "character2" alt="">
+            </div>
+            </a>
+            <a href="https://www.ea.govt.nz/" target="_blank">
+            <div id = "sidebar-scene4">
+                <div><p id="text3">Enlist smart switches and...</p></div>
+                <div id="roundedCorner"><strong id = "text4">Go off-peak power!</strong></div>
+                <img src="images/sidebar char 3.png" id = "character3" alt="">
+            </div>
+            </a>
+            <div id = "replay">
+                <button id = replayButton><img src="images/undo.png" id = "replayImage"></button>
+                <p id = studentName>Made: by Bryan Alexander Huang</p>
+                <p id = studentID>1590834</p>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="scripts.js"></script>
+</html>
